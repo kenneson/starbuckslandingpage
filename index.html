@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Starbucks Landing Page</title>
+</head>
+<body>
+    <section class="mainContainer">
+        <div class="circle"></div>
+        <header>
+            <a href="#" ><img src="./imgs/logo.png" alt="logo starbucks" class="logo"></a>
+            <ul>
+                <li><a id="menu1" href="#">Home</a></li>
+                <li><a id="menu2" href="#">Menu</a></li>
+                <li><a id="menu3" href="#">What's New</a></li>
+                <li><a id="menu4" href="#">Contact</a></li>
+            </ul>
+            <button id="langButton">Change Language</button>
+            <button id="btnDarkMode">Dark Mode</button>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2 id="mainMessage">It's no just Coffe <br> It's <span>Starbucks</span></h2>
+                <p id="txtParagraph">Enjoy a unique experience with Starbucks coffee. More than a beverage, it's a lifestyle. Discover a variety of blends and flavors, made with high-quality ingredients and perfect roasts. Immerse yourself in the cozy atmosphere of our stores, where every detail is designed to create a special moment. With Starbucks coffee, you get the taste of a tradition that transcends generations.</p>
+                <a id="btnLearnMore" href="https://www.youtube.com/watch?v=91Q6RvKvd7o&ab_channel=OnlineTutorials" target="_blank">Learn More</a>
+            </div>      
+                <div class="imgBox">
+                    <img src="./imgs/img1.png" class="starbucks">
+                </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="./imgs/thumb1.png" onclick="imgSlider('./imgs/img1.png');changeCircleColor('#017143')"></li>
+            <li><img src="./imgs/thumb2.png" onclick="imgSlider('./imgs/img2.png');changeCircleColor('#eb7495')"></li>
+            <li><img src="./imgs/thumb3.png" onclick="imgSlider('./imgs/img3.png');changeCircleColor('#d752b1')"></li>
+        </ul>
+        <ul class="social">
+            <li><a href="https://www.linkedin.com/in/kenneson-anderson-3443b9140/" target="_blank"><img src="./imgs/linkedin.png" alt="linkedin icone"></a></li>
+            <li><a href="https://www.instagram.com/kenneson19/" target="_blank"><img src="./imgs/instagram.png" alt="instagram icone"></a></li>
+            <li><a href="https://github.com/kenneson" target="_blank"><img src="./imgs/github.png" alt="github icone"></a></li>
+        </ul>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/main.js"></script>    
+
+</body>
+</html>
